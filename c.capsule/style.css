@@ -1,0 +1,262 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Header */
+header {
+  height: 100px;
+  background-color: rgba(2, 90, 253, 0.822);
+  padding: 0 50px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: #dae0e7;
+  font-weight: 200;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.menu a:hover {
+  color: #dae0e7;
+}
+
+#check {
+  display: none;
+}
+/* banner */
+#banner {
+  padding: 0 50px;
+  background-image: url(banner.jpg);
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.contenido-banner {
+  position: relative;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido-banner h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+.contenido-banner h3 strong {
+  font-weight: 600;
+}
+
+.boton-empezar {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid rgba(2, 90, 253, 0.822);
+  padding: 20px 40px;
+  align-self: baseline;
+  transition: all 0.4s;
+}
+
+.boton-empezar:hover {
+  background-color: rgba(2, 90, 253, 0.822);
+}
+/* Personas */
+#personas {
+  padding: 50px 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#personas img {
+  border-radius: 100%;
+}
+
+#personas div {
+  padding: 30px 30px;
+}
+
+#personas div h4 {
+  color: #010102;
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+#personas div p {
+  color: #3e4444;
+  font-size: 18px;
+}
+
+.boton-saber-mas {
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(2, 90, 253, 0.822);
+  padding: 10px 30px;
+  border: 3px solid rgba(2, 90, 253, 0.822);
+  border-radius: 30px;
+  margin-top: 15px;
+  transition: all 0.4s;
+}
+
+.boton-saber-mas:hover {
+  background-color: rgba(2, 90, 253, 0.822);
+  color: #fff;
+}
+/* iconos */
+#iconos {
+  padding: 0px 50px;
+  background: rgba(2, 90, 253, 0.822);
+}
+.contenido-iconos {
+  padding: 50px 50px 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.contenido-iconos div {
+  flex: 1;
+  margin: 20px 0px;
+  border-right: 2px solid rgba(255, 255, 255, 0.993);
+}
+#icono-fuerza {
+  border: none;
+}
+.contenido-iconos div i {
+  color: #dae0e7;
+}
+.contenido-iconos div h6 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 100;
+  margin: 10px 0;
+}
+.contenido-iconos div p {
+  color: #dae0e7;
+  font-size: 15px;
+}
+
+.boton-iconos {
+  text-align: center;
+  padding-bottom: 50px;
+}
+/* Formulario */
+#contacto {
+  background: rgba(2, 90, 253, 0.822);
+  padding: 50px 0px;
+  color: #fff;
+}
+#contacto h4 {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#contacto form {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.datos-form {
+  display: flex;
+}
+.datos-form div {
+  padding: 10px;
+  flex: 1;
+}
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+form input,
+form textarea {
+  background: rgba(2, 90, 253, 0.822);
+  border-radius: 10px;
+  border: 2px solid rgba(2, 90, 253, 0.822);
+  padding: 10px 5px;
+  outline: 0;
+  color: #fff;
+  width: 100%;
+}
+form input:focus,
+form textarea:focus {
+  border-color: rgba(2, 90, 253, 0.822);
+  box-shadow: 0 0 0 1px rgba(2, 90, 253, 0.822);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #fff;
+}
+.mensaje {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.boton-formulario .boton-saber-mas {
+  display: block;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  transition: 0.4s;
+}
+.boton-formulario .boton-saber-mas {
+  background: rgba(2, 90, 253, 0.822);
+}
+
+/* footer */
+footer {
+  background: rgba(255, 255, 255, 0.822);
+  color: rgba(2, 90, 253, 0.822);
+  text-align: center;
+  padding: 10px 0px;
+}
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  /* Header */
+  header {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    width: 100vw;
+    padding-bottom: 50px;
+  }
+
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+
+  /* personas */
+  #personas {
+    flex-direction: column;
+  }
+  /* iconos */
+  .contenido-iconos {
+    flex-direction: column;
+  }
+  .contenido-iconos div {
+    border: none;
+  }
+  /* formularios */
+  .datos-form {
+    flex-direction: column;
+  }
+}
